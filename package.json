@@ -1,0 +1,25 @@
+{
+  "name": "ast_lab",
+  "version": "1.0.0",
+  "description": "AST Lab - ski blog",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "./bin/start.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riemannn/ast_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Riemannn/ast_lab/issues"
+  },
+  "homepage": "https://github.com/Riemannn/ast_lab#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
