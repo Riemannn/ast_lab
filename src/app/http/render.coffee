@@ -45,6 +45,12 @@ module.exports =
         extension='jpeg' if extension=='jpg'
         server.write 200, "image/#{extension}", file, res
 
+    else if type == 'fonts'
+      # Render font
+      fs.readFile "public/fonts/#{filename}", (err, file) ->
+        throw err if err
+        server.write 200, 'application/octet-stream', file, res
+
     else if type == 'favicon.ico'
       fs.readFile 'public/favicon.ico', (err, file) ->
         throw err if err

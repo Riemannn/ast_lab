@@ -14,7 +14,7 @@ compilePug() {
 
 compileStylus() {
   echo "Compiling stylus files"
-  node_modules/.bin/stylus ./src/assets/ --out public/css/ --compress
+  node_modules/.bin/stylus ./src/assets/styl --out public/css/ --compress
 }
 
 main() {

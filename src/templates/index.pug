@@ -17,12 +17,92 @@ html
     head
         //- PAGE INFO
         meta(charset='utf-8')
-        title My page
+        title Ski blog
         link(rel='icon', href='public/favicon.ico')
         
         //- STYLESHEETS
         link(rel='stylesheet', href='public/css/reset')
         link(rel='stylesheet', href='public/css/global')
+        link(rel='stylesheet', href='public/css/index')
+        
+        //- link(rel='stylesheet', href='')
         
     body
-        h1 Hello World!
+        nav
+            div
+                ul(id="nav")
+                    li
+                        a(href="#") Home
+                    li
+                        a(href="#") Voyage
+                    li
+                        a(href="#") About
+                    li
+                        a(href="contact.html") Contact
+                    
+                ul(id="social")
+                    li
+                        a(href="https://www.facebook.com/")
+                            img(src="public/img/fb.png", alt="facebook")
+                    li
+                        a(href="https://twitter.com/?lang=fr")
+                            img(src="public/img/twitter.png", alt="twitter")
+                    li
+                        a(href="https://www.instagram.com/?hl=fr")
+                            img(src="public/img/instagram.png", alt="instagram")
+                    li
+                        a(href="https://www.pinterest.fr/")
+                            img(src="public/img/pin.png", alt="pinterest")
+                            
+        header(id="intro")
+            h1 Les Contamines Montjoie
+        
+        main
+            aside
+                header(id="titre") La station, en bref
+                img(src="public/img/logo.JPG", alt="logo conta")
+                p(id="texte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+
+            section
+                article(class="art")
+                    header(class="artTitre") Le domaine skiable
+                    p(class="date")
+                        time(datetime="2017-09-30") 30 Septembre 2017
+                    div(id="box")
+                        img(id="img", src="public/img/domaine.jpg", alt="domaine")
+                    p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+                    a(href="index.html", class="button") Continuer à lire
+
+                article(class="art")
+                    header(class="artTitre") Le village
+                    p(class="date")
+                        time(datetime="2017-09-30") 30 Septembre 2017
+                    div(id="box")
+                        img(id="img", src="public/img/eglise.jpg", alt="eglise")
+                    p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+                    a(href="index.html", class="button") Continuer à lire
+
+                article(class="art")
+                    header(class="artTitre") Où se restaurer ?
+                    p(class="date")
+                        time(datetime="2017-09-30") 30 Septembre 2017
+                    div(id="box")
+                        img(id="img", src="public/img/ruelle.jpg", alt="ruelle")
+                    p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+                    a(href="index.html", class="button") Continuer à lire
+        
+        footer
+            p Voyage Voyage - Copyright (c) Alexandre Pielucha & Marie Perin
+            ul
+                li
+                    img(src="public/img/img1.jpg", alt="conta image")
+                li
+                    img(src="public/img/img2.jpg", alt="conta image")
+                li
+                    img(src="public/img/img3.jpg", alt="conta image")
+                li
+                    img(src="public/img/img4.jpg", alt="conta image")
+                li
+                    img(src="public/img/img5.jpg", alt="conta image")
+                li
+                    img(src="public/img/img6.jpg", alt="conta image")
