@@ -10,7 +10,7 @@ In a terminal, run `npm install` from the project's root.
 ## Run
 
 In a terminal, run `npm start` from the the project's root.  
-Now go on your favorite web browser, and browse to [localhost:8080](localhost:8080) or [127.0.0.1:8080](127.0.0.1:8080).
+Now go on your favorite web browser, and browse to [localhost:8080](http://localhost:8080) or [127.0.0.1:8080](http://127.0.0.1:8080).
 
 ## Tests
 
