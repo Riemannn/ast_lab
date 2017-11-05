@@ -1,7 +1,7 @@
 # Compiled files
 public/html/*.html
 public/css/*.css
-lib/*.js
+lib/**/*.js
 
 # Editor configuration
 .editorconfig

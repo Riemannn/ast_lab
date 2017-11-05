@@ -12,19 +12,12 @@
 // OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 // CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-// Import a module
-var http = require("http");
+box-shadow(h, v, blur, color)
+    -webkit-box-shadow h v blur color
+    -moz-box-shadow h v blur color
+    box-shadow h v blur color
 
-// Declare an http server
-http.createServer(function (req, res) {
-
-  // Write a response header
-  res.writeHead(200, {"Content-Type": "text/plain"});
-
-  // Write a response content
-  res.end("Hello World\n");
-
-// Start the server
-}).listen(1337, "127.0.0.1")
-
-// curl localhost:1337 or go to http://localhost:1337
+text-shadow(h, v, blur, color)
+    -webkit-text-shadow h v blur color
+    -moz-text-shadow h v blur color
+    text-shadow h v blur color
