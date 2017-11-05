@@ -1,3 +1,17 @@
+/*Copyright (C) 2017 Alexandre Pielucha
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.*/
+
 body{
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -60,7 +74,7 @@ div{
         width: 800px;
         height: 55px;
     }
-    
+
     #nav{
         margin: 0;
         padding-top: 18px;
@@ -82,7 +96,7 @@ div{
         padding-left: 0;
         margin-right: auto;
     }
-    
+
     #nav li{
         text-align: left;
         display: inline-block;
@@ -104,7 +118,7 @@ div{
         width: 100%;
         height: 55px;
     }
-    
+
     #nav{
         margin: 0;
         padding-top: 18px;
@@ -119,7 +133,7 @@ div{
     #social{
         visibility: hidden;
     }
-    
+
     #nav li{
         text-align: center;
         display: inline-block;
@@ -288,11 +302,11 @@ section{
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     section{
         width: 518px;
     }
-    
+
     .art{
         width: 518px;
         padding-top: 55px;
@@ -307,7 +321,7 @@ section{
         width:518px;
         height:auto;
     }
-    
+
     .artTexte{
         width: 518px;
         margin: auto;
@@ -322,11 +336,11 @@ section{
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     section{
         width: 100%;
     }
-    
+
     aside{
         margin-top: 55px;
         width: 100%;
@@ -364,7 +378,7 @@ section{
         margin-top: 20px;
         margin-bottom: 50px;
     }
-    
+
     .art{
         width: 100%;
         padding-top: 55px;
@@ -373,7 +387,7 @@ section{
         border-bottom-color: #E2E2E2;
         border-bottom-width: 1px;
     }
-    
+
     #box {
         overflow:hidden;
         width:85%;
@@ -382,7 +396,7 @@ section{
         margin-right: auto;
         display: block;
     }
-    
+
     .artTexte{
         width: 85%;
         margin: auto;
