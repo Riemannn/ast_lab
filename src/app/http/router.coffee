@@ -26,6 +26,8 @@ module.exports =
     switch directory
       when '/'
         render.resource 'html', 'index', res
+      when 'contact'
+        render.resource 'html', 'contact', res
       when 'public'
         render.resource type, filename, res
       else

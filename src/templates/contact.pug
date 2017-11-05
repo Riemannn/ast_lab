@@ -15,29 +15,30 @@
 doctype html
 html
     head
+    head
         //- PAGE INFO
         meta(charset='utf-8')
-        title Ski blog
+        title Ski blog - Contact
         link(rel='icon', href='public/favicon.ico')
         
         //- STYLESHEETS
         link(rel='stylesheet', href='public/css/reset')
         link(rel='stylesheet', href='public/css/global')
-        link(rel='stylesheet', href='public/css/index')
-        
+        link(rel='stylesheet', href='public/css/contact')
+
     body
         nav
             div
                 ul(id="nav")
                     li
-                        a(href="#") Home
+                        a(href="/") Home
                     li
                         a(href="#") Voyage
                     li
                         a(href="#") About
                     li
                         a(href="contact") Contact
-                    
+
                 ul(id="social")
                     li
                         a(href="https://www.facebook.com/")
@@ -51,44 +52,41 @@ html
                     li
                         a(href="https://www.pinterest.fr/")
                             img(src="public/img/pin.png", alt="pinterest")
-                            
+            
         header(id="intro")
-            h1 Les Contamines Montjoie
-        
+            h1 Voyage voyage
+
         main
             aside
-                header(id="titre") La station, en bref
-                img(src="public/img/logo.JPG", alt="logo conta")
+                header(id="titre") Qui suis-je ?
+                img(src="public/img/logo.JPG", alt="photo conta")
                 p(id="texte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
 
             section
-                article(class="art")
-                    header(class="artTitre") Le domaine skiable
-                    p(class="date")
-                        time(datetime="2017-09-30") 30 Septembre 2017
-                    div(id="box")
-                        img(id="img", src="public/img/domaine.jpg", alt="domaine")
-                    p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
-                    a(href="index.html", class="button") Continuer à lire
+                article
+                    p Vous êtes intéressé(e) par mon blog ? Vous souhaitez m'aider à l'enrichir ? Laissez un commentaire en passant par le formulaire et je ferai au plus vite afin de prendre en compte vos remarques !
+                    form
+                        input(type="text", autofocus, name="firstname", placeholder="Prénom")
+                        br
+                        input(type="text", name="lastname", placeholder="Nom")
+                        br
+                        input(type="email", required, name="mail", pattern="[a-z0-9._%+-]+@[a-z0-9.]+\.[a-z]{2,3}$", placeholder="Adresse mail")
+                        br
+                        input(type="tel", required, name="tel", pattern="0[0-9]{9}", placeholder="Téléphone")
+                        br
+                        input(type="date", required)
+                        br
+                        input(type="text", list="Type", placeholder="Type de visiteur", pattern="[a-zA-Z]{2,20}")
+                        datalist(id="Type")
+                            option(value="Presse")
+                            option(value="Fan")
+                            option(value="Curieux")
+                        br
+                        textarea(name="comm", rows="10", placeholder="Laissez un commentaire ...", cols="50")
+                        br
+                        br
+                        input(id="btn", type="submit", value="Submit")
 
-                article(class="art")
-                    header(class="artTitre") Le village
-                    p(class="date")
-                        time(datetime="2017-09-30") 30 Septembre 2017
-                    div(id="box")
-                        img(id="img", src="public/img/eglise.jpg", alt="eglise")
-                    p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
-                    a(href="index.html", class="button") Continuer à lire
-
-                article(class="art")
-                    header(class="artTitre") Où se restaurer ?
-                    p(class="date")
-                        time(datetime="2017-09-30") 30 Septembre 2017
-                    div(id="box")
-                        img(id="img", src="public/img/ruelle.jpg", alt="ruelle")
-                    p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
-                    a(href="index.html", class="button") Continuer à lire
-        
         footer
             p Voyage Voyage - Copyright (c) Alexandre Pielucha & Marie Perin
             ul

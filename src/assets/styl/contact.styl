@@ -12,14 +12,11 @@
 // OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 // CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-@require 'src/assets/styl/mixins'
-
 nav
     background-color #F4F4F4
     box-shadow 0 0 5px #727272
     height 55px
     position fixed
-    top 0
     width 100%
     z-index 2
 
@@ -127,7 +124,7 @@ a
     text-decoration none
     color black
 
-a hover
+a:hover
     color #BC9D74
 
 #intro h1
@@ -138,7 +135,7 @@ a hover
     text-align center
     padding-top 20px
     padding-bottom 20px
-    width 500px
+    width 450px
     font-size 40px
     background-color white
     opacity 0.7
@@ -153,19 +150,19 @@ a hover
         text-align center
         padding-top 20px
         padding-bottom 20px
-        width 300px
+        width 250px
         font-size 30px
         background-color white
         opacity 0.7
         font-weight normal
 
-    #intro
-        width 100%
-        padding-bottom 172px
-        padding-top 173px
-        background-position top
-        background-image url('../html/img/intro.jpg')
-        background-size cover
+#intro
+    width 100%
+    padding-bottom 172px
+    padding-top 173px
+    background-position top
+    background-image url('../img/intro.jpg')
+    background-size cover
 
 main
     width 1050px
@@ -205,37 +202,49 @@ aside img
 section
     width 768px
 
-.art
+
+article
     width 768px
     padding-top 55px
-    padding-bottom 55px
-    border-bottom-style solid
-    border-bottom-color #E2E2E2
-    border-bottom-width 1px
 
-#box hover #img
-    transform scale(1.1)
-
-#box
-    overflow hidden
+article p
     width 768px
-    height auto
-
-#img
-    transition all 0.4s ease
-    width 100%
-
-.artTitre
-    font-size 22px
-    text-align center
     margin 0
-    margin-bottom 20px
-
-.artTexte
-    width 708px
-    margin auto
+    margin-bottom 55px
     text-align justify
-    padding-top 20px
+
+form
+    text-align center
+    margin auto
+
+input
+    height 30px
+    width 250px
+    margin-bottom 15px
+    border-radius 5px
+    border 1px solid #BC9D74
+
+textarea
+    border 1px solid #BC9D74
+
+#btn
+    width 200px
+    height auto
+    padding-top 15px
+    padding-bottom 15px
+    background-color black
+    border none
+    color white
+    text-align center
+    font-family 'Lato', sans-serif
+    font-size 15px
+    cursor pointer
+    border-style none
+    border-radius 0
+
+#btn:hover
+    background linear-gradient(to bottom, #BC9D74, #E2D6C5)
+    color white
 
 @media only screen and (max-width 1067px)
     main
@@ -246,24 +255,11 @@ section
     section
         width 518px
 
-    .art
+    article
         width 518px
-        padding-top 55px
-        padding-bottom 55px
-        border-bottom-style solid
-        border-bottom-color #E2E2E2
-        border-bottom-width 1px
 
-    #box
-        overflow hidden
+    article p
         width 518px
-        height auto
-
-    .artTexte
-        width 518px
-        margin auto
-        text-align justify
-        padding-top 20px
 
 @media only screen and (max-width 820px)
     main
@@ -277,6 +273,16 @@ section
     aside
         margin-top 55px
         width 100%
+
+    article
+        width 100%
+        padding-top 55px
+        padding-bottom 55px
+
+    article p
+        width 85%
+        margin auto
+        margin-bottom 55px
 
     aside img
         overflow hidden
@@ -307,54 +313,6 @@ section
         margin auto
         margin-top 20px
         margin-bottom 50px
-
-    .art
-        width 100%
-        padding-top 55px
-        padding-bottom 55px
-        border-bottom-style solid
-        border-bottom-color #E2E2E2
-        border-bottom-width 1px
-
-    #box
-        overflow hidden
-        width 85%
-        height auto
-        margin-left auto
-        margin-right auto
-        display block
-
-    .artTexte
-        width 85%
-        margin auto
-        text-align justify
-        padding-top 20px
-
-.button
-    display block
-    margin auto
-    margin-top 40px
-    width 200px
-    padding-top 15px
-    padding-bottom 15px
-    background-color black
-    border none
-    color white
-    text-align center
-    font-family 'Lato', sans-serif
-    cursor pointer
-
-.button:hover
-    background-color #BC9D74
-    transition 0.3s
-    color white
-
-.date
-    text-align center
-    color #B4B4B4
-    font-size 12px
-    margin 0
-    margin-bottom 20px
 
 footer
     margin-top 55px
