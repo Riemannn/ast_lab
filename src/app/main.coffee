@@ -15,6 +15,6 @@
 router = require './http/router'
 server = require './http/server'
 
-server.setHost '10.0.2.15', 8080
+server.setHost '127.0.0.1', 8080
 server.setLogic router.logic
 server.start()
