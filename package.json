@@ -1,25 +1,20 @@
 {
   "name": "ast_lab",
   "version": "1.0.0",
-  "description": "AST Lab - ski blog",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "Class of Asynchronous Server Technologies - ECE Paris, 2017 - Lab Work (ski blog)",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "./bin/start.sh"
+    "start": "./bin/start",
+    "test": "./bin/test ./tests/*"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Riemannn/ast_lab.git"
   },
-  "author": "",
+  "author": "Alexandre Pielucha & Marie Perin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Riemannn/ast_lab/issues"
   },
-  "homepage": "https://github.com/Riemannn/ast_lab#readme",
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+  "homepage": "https://github.com/Riemannn/ast_lab#readme"
 }
