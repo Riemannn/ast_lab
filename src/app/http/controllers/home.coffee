@@ -22,3 +22,11 @@ module.exports =
 
   contact: (res) ->
     render.resource 'html', this.templateFolder + '/contact', res
+
+  send: (message, callback) ->
+    if !callback?
+      callback = message
+      callback new Error 'Missing parameters'
+    else
+      # TODO: send message
+      callback()
