@@ -23,7 +23,8 @@ controller =
 module.exports =
   logic: (req, res) ->
     url = url.parse req.url
-    [ _, directory, type, filename ] = url.pathname.split '/'
+    [ _, directory, type ] = url.pathname.split '/', 3
+    filename = url.pathname.substring(1 + (directory||'').length + 1 + (type||'').length + 1) || ''
 
     directory = '/' if (!directory? || directory=='')
 

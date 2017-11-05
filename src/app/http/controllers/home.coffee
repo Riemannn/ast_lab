@@ -15,8 +15,10 @@
 render = require '../render'
 
 module.exports =
+  templateFolder: 'home'
+
   index: (res) ->
-    render.resource 'html', 'index', res
+    render.resource 'html', this.templateFolder + '/index', res
 
   contact: (res) ->
-    render.resource 'html', 'contact', res
+    render.resource 'html', this.templateFolder + '/contact', res

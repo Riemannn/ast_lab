@@ -15,5 +15,7 @@
 render = require '../render'
 
 module.exports =
+  templateFolder: 'error'
+
   http_404: (res) ->
-    render.resource 'html', 'error_404', res
+    render.resource 'html', this.templateFolder + '/http_404', res

@@ -1,0 +1,58 @@
+//- Copyright (C) 2017 Alexandre Pielucha
+//- 
+//- Permission to use, copy, modify, and/or distribute this software for any
+//- purpose with or without fee is hereby granted, provided that the above
+//- copyright notice and this permission notice appear in all copies.
+//- 
+//- THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+//- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+//- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+//- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+//- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+//- OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+//- CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+extends ../layout.pug
+
+block title
+    title Ski blog
+
+block stylesheets
+    link(rel='stylesheet', href='public/css/home/index')
+
+block header
+    h1 Les Contamines Montjoie
+
+block content
+    aside
+        header(id="titre") La station, en bref
+        img(src="public/img/logo.JPG", alt="logo conta")
+        p(id="texte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+
+    section
+        article(class="art")
+            header(class="artTitre") Le domaine skiable
+            p(class="date")
+                time(datetime="2017-09-30") 30 Septembre 2017
+            div(id="box")
+                img(id="img", src="public/img/domaine.jpg", alt="domaine")
+            p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+            a(href="index.html", class="button") Continuer à lire
+
+        article(class="art")
+            header(class="artTitre") Le village
+            p(class="date")
+                time(datetime="2017-09-30") 30 Septembre 2017
+            div(id="box")
+                img(id="img", src="public/img/eglise.jpg", alt="eglise")
+            p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+            a(href="index.html", class="button") Continuer à lire
+
+        article(class="art")
+            header(class="artTitre") Où se restaurer ?
+            p(class="date")
+                time(datetime="2017-09-30") 30 Septembre 2017
+            div(id="box")
+                img(id="img", src="public/img/ruelle.jpg", alt="ruelle")
+            p(class="artTexte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+            a(href="index.html", class="button") Continuer à lire
