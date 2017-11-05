@@ -1,6 +1,6 @@
 # Asynchronous Server Technologies - Lab
 
-AST Lab - Ski blog
+AST Lab - Ski blog [![Build Status](https://travis-ci.org/Riemannn/ast_lab.svg?branch=master)](https://travis-ci.org/Riemannn/ast_lab)
 
 ## Installation instructions
 
