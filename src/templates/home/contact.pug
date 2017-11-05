@@ -1,0 +1,55 @@
+//- Copyright (C) 2017 Alexandre Pielucha
+//- 
+//- Permission to use, copy, modify, and/or distribute this software for any
+//- purpose with or without fee is hereby granted, provided that the above
+//- copyright notice and this permission notice appear in all copies.
+//- 
+//- THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+//- WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+//- MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+//- ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+//- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+//- OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+//- CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+extends ../layout.pug
+
+block title
+    title Ski blog - Contact
+
+block stylesheets
+    link(rel='stylesheet', href='public/css/contact')
+
+block header
+    h1 Contact
+
+block content
+    aside
+        header(id="titre") Qui suis-je ?
+        img(src="public/img/logo.jpg", alt="photo conta")
+        p(id="texte") Accedat huc suavitas quaedam oportet sermonum atque morum, haudquaquam mediocre condimentum amicitiae. Tristitia autem et in omni re severitas habet illa quidem gravitatem, sed amicitia remissior esse debet et liberior et dulcior et ad omnem comitatem facilitatemque proclivior.
+
+    section
+        article
+            p Vous êtes intéressé(e) par mon blog ? Vous souhaitez m'aider à l'enrichir ? Laissez un commentaire en passant par le formulaire et je ferai au plus vite afin de prendre en compte vos remarques !
+            form
+                input(type="text", autofocus, name="firstname", placeholder="Prénom")
+                br
+                input(type="text", name="lastname", placeholder="Nom")
+                br
+                input(type="email", required, name="mail", pattern="[a-z0-9._%+-]+@[a-z0-9.]+\.[a-z]{2,3}$", placeholder="Adresse mail")
+                br
+                input(type="tel", required, name="tel", pattern="0[0-9]{9}", placeholder="Téléphone")
+                br
+                input(type="date", required)
+                br
+                input(type="text", list="Type", placeholder="Type de visiteur", pattern="[a-zA-Z]{2,20}")
+                datalist(id="Type")
+                    option(value="Presse")
+                    option(value="Fan")
+                    option(value="Curieux")
+                br
+                textarea(name="comm", rows="10", placeholder="Laissez un commentaire ...", cols="50")
+                br
+                br
+                input(id="btn", type="submit", value="Submit")
