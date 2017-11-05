@@ -12,27 +12,8 @@
 # OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 # CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-server = require './server'
-url = require 'url'
-
-controller =
-  error: require './controllers/error'
-  home: require './controllers/home'
-  public: require './controllers/public'
+render = require '../render'
 
 module.exports =
-  logic: (req, res) ->
-    url = url.parse req.url
-    [ _, directory, type, filename ] = url.pathname.split '/'
-
-    directory = '/' if (!directory? || directory=='')
-
-    switch directory
-      when '/'
-        controller.home.index res
-      when 'contact'
-        controller.home.contact res
-      when 'public'
-        controller.public.static type, filename, res
-      else
-        controller.error.http_404 res
+  static: (type, filename, res) ->
+    render.resource type, filename, res
