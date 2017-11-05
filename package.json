@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/Riemannn/ast_lab/issues"
   },
-  "homepage": "https://github.com/Riemannn/ast_lab#readme"
+  "homepage": "https://github.com/Riemannn/ast_lab#readme",
+  "dependencies": {
+    "coffee-script": "^1.12.7",
+    "pug": "^2.0.0-rc.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.3"
+  }
 }
